@@ -19,7 +19,7 @@ struct ContentView: View {
         
         VStack {
             TextField("Username", text: $userID)
-            TextField("Full name", text: $userPass)
+            SecureField("Password", text: $userPass).disableAutocorrection(true)
             Button(action: {
                 
                 self.login()
