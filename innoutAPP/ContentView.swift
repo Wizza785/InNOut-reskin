@@ -17,6 +17,49 @@ struct ContentView: View {
    @State private var userPass: String = ""
     var body: some View {
         
+        
+        Image(uiImage: #imageLiteral(resourceName: "loginin.png"))
+            .renderingMode(.original)
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .overlay(VStack(spacing: 9) {
+                Rectangle()
+                        .fill(Color(.systemBackground))
+                        .frame(width: 330, height: 100)
+                        .clipped()
+                        .fixedSize(horizontal: true, vertical: true)
+                        .offset(x: 7, y: -34)
+                TextField("  Associate ID:", text: $userID)
+                    .frame(minWidth: 296, minHeight: 42, alignment: .leading)
+                    .clipped()
+                    .background(Color(.systemGray6))
+                    .cornerRadius(10)
+                    .offset(x: 6, y: -294)
+                    .fixedSize(horizontal: true, vertical: true)
+                    .font(Font.system(.callout, design: .rounded))
+                    .foregroundColor(Color.secondary)
+                SecureField("  Password (Not PIN):", text: $userPass)
+                    .frame(minWidth: 296, minHeight: 42, alignment: .leading)
+                    .clipped()
+                    .background(Color(.systemGray6))
+                    .cornerRadius(10)
+                    .offset(x: 6, y: -295)
+                    .fixedSize(horizontal: true, vertical: true)
+                    .font(Font.system(.callout, design: .rounded))
+                    .foregroundColor(Color.secondary)
+                
+                Button(action: self.login) {
+                    Text("Sign In").foregroundColor(.white).padding().background(Rectangle().cornerRadius(10).foregroundColor(.red)).padding(20).offset(x: 0, y: -250)
+                }
+            }
+            .background(Group {
+                EmptyView()
+            }, alignment: .center)
+            .padding(3)
+            .offset(x: 0, y: 261), alignment: .center)
+        
+        
+  /*
         VStack {
             TextField("Username", text: $userID)
             SecureField("Password", text: $userPass).disableAutocorrection(true)
@@ -28,8 +71,9 @@ struct ContentView: View {
                 Text("Login")
             }
         }.textFieldStyle(RoundedBorderTextFieldStyle())
-        
+   */
     }
+
     
     func login(){
 

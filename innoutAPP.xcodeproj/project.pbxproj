@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0737FB432897607900629514 /* loginin.png in Resources */ = {isa = PBXBuildFile; fileRef = 0737FB422897607900629514 /* loginin.png */; };
 		07CF722C2894734A00E16D76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CF722B2894734A00E16D76 /* AppDelegate.swift */; };
 		07CF722E2894734A00E16D76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CF722D2894734A00E16D76 /* SceneDelegate.swift */; };
 		07CF72302894734A00E16D76 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CF722F2894734A00E16D76 /* ContentView.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0737FB422897607900629514 /* loginin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginin.png; sourceTree = "<group>"; };
 		07CF72282894734A00E16D76 /* innoutAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = innoutAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07CF722B2894734A00E16D76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07CF722D2894734A00E16D76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				07CF722B2894734A00E16D76 /* AppDelegate.swift */,
 				07CF722D2894734A00E16D76 /* SceneDelegate.swift */,
 				07CF722F2894734A00E16D76 /* ContentView.swift */,
+				0737FB422897607900629514 /* loginin.png */,
 				07CF72312894734C00E16D76 /* Assets.xcassets */,
 				07CF72362894734C00E16D76 /* LaunchScreen.storyboard */,
 				07CF72392894734C00E16D76 /* Info.plist */,
@@ -242,6 +245,7 @@
 			files = (
 				07CF72382894734C00E16D76 /* LaunchScreen.storyboard in Resources */,
 				07CF72352894734C00E16D76 /* Preview Assets.xcassets in Resources */,
+				0737FB432897607900629514 /* loginin.png in Resources */,
 				07CF72322894734C00E16D76 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
