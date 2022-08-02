@@ -16,19 +16,11 @@ struct ContentView: View {
    @State private var userID: String = ""
    @State private var userPass: String = ""
     var body: some View {
-        
-        
-        Image(uiImage: #imageLiteral(resourceName: "loginin.png"))
+        Image(uiImage: #imageLiteral(resourceName: "loginbkgd.png"))
             .renderingMode(.original)
             .resizable()
             .aspectRatio(contentMode: .fit)
             .overlay(VStack(spacing: 9) {
-                Rectangle()
-                        .fill(Color(.systemBackground))
-                        .frame(width: 330, height: 100)
-                        .clipped()
-                        .fixedSize(horizontal: true, vertical: true)
-                        .offset(x: 7, y: -34)
                 TextField("  Associate ID:", text: $userID)
                     .frame(minWidth: 296, minHeight: 42, alignment: .leading)
                     .clipped()
@@ -56,7 +48,7 @@ struct ContentView: View {
                 EmptyView()
             }, alignment: .center)
             .padding(3)
-            .offset(x: 0, y: 261), alignment: .center)
+            .offset(x: 0, y: 330), alignment: .center)
         
         
   /*
@@ -89,11 +81,8 @@ struct ContentView: View {
         request.addValue("gzip, deflate, br", forHTTPHeaderField: "accept-encoding")
         request.addValue("keep-alive", forHTTPHeaderField: "connection")
         request.addValue("text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8", forHTTPHeaderField: "accept")
-        request.addValue("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.2 Safari/605.1.15", forHTTPHeaderField: "user-agent")
         request.addValue("https://associate.innout.com/Default.aspx?ReturnUrl=%2f", forHTTPHeaderField: "referer")
-        request.addValue("910", forHTTPHeaderField: "content-length")
         request.addValue("en-us", forHTTPHeaderField: "accept-language")
-        request.addValue("2585644", forHTTPHeaderField: "x-postman-captr")
 
         request.httpMethod = "POST"
         request.httpBody = postData
